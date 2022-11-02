@@ -9,7 +9,7 @@ package Ejercicios;
  * @author galin
  */
 public class Ejercicio3 {
-
+    //Ordenamiento con el metodo de seleccion
     public static void main(String[] args) {
         int Array[] = {7, 6, 11, 17, 3, 15, 5, 19, 30, 14};
         
@@ -17,6 +17,10 @@ public class Ejercicio3 {
         ordenarSeleccion(Array);
         MostrarArreglo(Array);//Arreglo ordenado
 
+    }
+    
+    public static void CargarArreglo(){
+        
     }
 
     public static void MostrarArreglo(int Array[]) {
