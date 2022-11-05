@@ -32,14 +32,14 @@ public class Ejercicio4 {
         }
     }
 
-    public static void intercambio(int pos, int posMenor, int Arreglo[]) {
-        //posMenor es la posicion del menor
-        //pos por la que intercambia
+    public static void intercambio(int posIz, int posDe, int Arreglo[]) {
+        //posIz derecha
+        //posDe izquierda
         int aux;
 
-        aux = Arreglo[posMenor];
-        Arreglo[posMenor] = Arreglo[pos];
-        Arreglo[pos] = aux;
+        aux = Arreglo[posDe];
+        Arreglo[posDe] = Arreglo[posIz];
+        Arreglo[posIz] = aux;
     }
     
     public static void MostrarArreglo(int Arreglo[]){
