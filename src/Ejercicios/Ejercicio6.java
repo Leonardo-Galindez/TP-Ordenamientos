@@ -31,6 +31,7 @@ public class Ejercicio6 {
                     intercambio(j,j+1,Arreglo);
                 }
             }
+            i++;
         }
     }
 
