@@ -22,7 +22,6 @@ public class Ejercicio2 {
             numBusca = sc.nextInt();
             posNumero = BusquedaBinaria(Array, numBusca);
             if (posNumero != -1) {
-
                 System.out.println("El numero:" + numBusca + " esta en la posicion:" + posNumero);
             } else {
                 System.out.println("El numero:" + numBusca + " no esta en el arreglo");

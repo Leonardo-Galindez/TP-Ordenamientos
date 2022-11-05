@@ -20,11 +20,12 @@ public class Ejercicio1 {
         do {
             System.out.println("Ingrese numero a Buscar");
             numBusca = sc.nextInt();
-            System.out.println("Ingrese Tipo de recorrido en la busqueda");
+            /*System.out.println("Ingrese Tipo de recorrido en la busqueda");
             System.out.println("Busqueda Principio a Fin----1");
             System.out.println("Busqueda Fin a Principio----2");
             rta = sc.nextInt();
-            Menu(rta,Array,numBusca);
+            Menu(rta,Array,numBusca);*/
+            System.out.println("El numero:" + numBusca + " esta en el Arreglo?" +BusquedaPrincipioFin(Array, numBusca));
         } while (numBusca != 0);
     }
 
@@ -44,7 +45,7 @@ public class Ejercicio1 {
         boolean bandera;//nuestra variable de corte 
         bandera = false;
 
-        while (i < 7 && !bandera) {
+        while (i < Arreglo.length && !bandera) {
             if (Arreglo[i] == numero) {//nuemro el numero que se desea buscar
                 bandera = true;
             }
