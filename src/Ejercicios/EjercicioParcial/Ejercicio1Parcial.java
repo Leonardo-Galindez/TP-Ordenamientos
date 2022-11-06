@@ -8,20 +8,43 @@ package Ejercicios.EjercicioParcial;
  *
  * @author galin
  */
+import java.util.Scanner;
+
 public class Ejercicio1Parcial {
 
     public static void main(String[] args) {
-        int i = 0, j = 0, posFila;
+        Scanner sc = new Scanner(System.in);
+        int i = 0, j = 0, posFila, fila, colum;
         posFila = -1;
-        int Matriz[][]
-                = {{1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 8}};
-
+        System.out.println("ingrese fila");
+        fila = sc.nextInt();
+        System.out.println("ingrese colum");
+        colum = sc.nextInt();
+        int Matriz[][] = new int[fila][colum];
+        CargarMatriz(Matriz,fila,colum,i,j);
         System.out.println(RecorrerMatriz(i, j, Matriz, posFila));
     }
-        //esta bien que posFila entre por parametros
- 
+    //esta bien que posFila entre por parametros
+
+    public static void CargarMatriz(int Matriz[][], int Cantfila, int Cantcolum,int i,int j) {
+        int num;
+       
+        Scanner sc = new Scanner(System.in);
+        if (i != Cantfila - 1 || j != Cantcolum - 1) {
+            if (j < Cantcolum) {
+                System.out.println("Ingrese numero");
+                num = sc.nextInt();
+                Matriz[i][j] = num;
+                CargarMatriz(Matriz, Cantfila, Cantcolum,i,j+1);
+            } else {
+                CargarMatriz(Matriz, Cantfila,Cantcolum,i+1,0);
+            }
+        } else {
+            System.out.println("Ingrese numero");
+            num = sc.nextInt();
+            Matriz[i][j] = num;
+        }
+    }
 
     public static int RecorrerMatriz(int fila, int colum, int Matriz[][], int posFila) {
 
