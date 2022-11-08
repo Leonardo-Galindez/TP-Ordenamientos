@@ -39,9 +39,5 @@ public class Ejercicio1Parcial {
         
         return posFila;
     }
-   public static void VerificarFila(){
-        if(){
-            
-        }
-    }
+   
 }
