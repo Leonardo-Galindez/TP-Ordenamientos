@@ -9,7 +9,7 @@ package Ejercicios;
  * @author galin
  */
 public class Ejercicio6 {
-
+//Burbuja mejorado
     public static void main(String[] args) {
         int[] Array = {89, 45, 68, 90, 29, 34, 17};
         MostrarArreglo(Array);
@@ -25,7 +25,7 @@ public class Ejercicio6 {
         int i=0;
         while(i<Arreglo.length-1 && !ordenado){
             ordenado=true;
-            for(int j=0;j<=Arreglo.length-1-i-1;j++){
+            for(int j=0;j<=Arreglo.length-i-2;j++){
                 if(Arreglo[j]>Arreglo[j+1]){
                     ordenado=false;
                     intercambio(j,j+1,Arreglo);
