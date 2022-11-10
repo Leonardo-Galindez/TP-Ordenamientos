@@ -15,6 +15,7 @@ public class Ejercicio3 {
         
         MostrarArreglo(Array);//Arreglo no ordenado
         ordenarSeleccion(Array);
+        System.out.println("");
         MostrarArreglo(Array);//Arreglo ordenado
 
     }
@@ -53,7 +54,7 @@ public class Ejercicio3 {
     
     public static void MostrarArreglo(int Array[]) {
         for (int i = 0; i < Array.length; i++) {
-            System.out.print(Array[i]);
+            System.out.print(Array[i]+"-");
         }
     }
 }
