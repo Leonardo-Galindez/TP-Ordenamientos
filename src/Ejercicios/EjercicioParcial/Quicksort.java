@@ -14,4 +14,11 @@ public class Quicksort {
             
             
     }
+    
+    public static void quicksort(int arr[],int i,int j){
+        
+        int indice,k;
+        
+    }
+            
 }
