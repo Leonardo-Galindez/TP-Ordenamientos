@@ -13,7 +13,7 @@ package Ejercicios;
 public class Ejercicio4 {
 
     public static void main(String[] args) {
-        int[] Array = {89, 45, 68, 90, 29, 34, 17};
+       int Array[] = {4, 7, 6, 1, 32, 0};
          MostrarArreglo(Array);
         ordenarBurbuja(Array);
        
